@@ -50,4 +50,5 @@ jobs:
         run: cat file1.txt
 
       - name: Run this step if branch is main
-        run: echo ${{ github.ref }}
+        if: github.ref == 'refs/heads/test-1'
+        run: echo "test-1"
