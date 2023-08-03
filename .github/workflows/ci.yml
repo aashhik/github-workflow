@@ -44,7 +44,7 @@ jobs:
       - name: List file and its content
         uses: actions/download-artifact@v2
         with:
-          name: file1.txt
+          name: file-artifact
 
       - name: List content of file
         run: cat file1.txt
