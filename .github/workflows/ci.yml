@@ -48,3 +48,6 @@ jobs:
 
       - name: List content of file
         run: cat file1.txt
+
+      - name: Run this step if branch is main
+        run: echo $github.ref
